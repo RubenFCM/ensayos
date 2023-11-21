@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Conversor.ConversorActivity"
+    android:background="#1B4049">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#307D95"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        >
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <EditText
+            android:id="@+id/etCantidadEur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|number"
+            android:hint="Introduce la cantidad de €"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona la moneda a la que quiere convertir:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                >
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnEur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+
+                    app:backgroundTint="#88BBE3"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnRublo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    app:backgroundTint="#88BBE3"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnYen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    app:backgroundTint="#88BBE3"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnLibra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:backgroundTint="#88BBE3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.pruebasdeaprendido.Conversor.ConversorActivity
 import com.example.pruebasdeaprendido.PruebasApp.PruebaActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,12 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var btnPrueba = findViewById<Button>(R.id.btnPrueba)
-        btnPrueba.setOnClickListener { navigateToPruebaApp() }
+        var btnCalculosApp = findViewById<Button>(R.id.btnCalculosApp)
+        btnCalculosApp.setOnClickListener { navigateToPruebaApp() }
+        var btnConversorApp = findViewById<Button>(R.id.btnConversorApp)
+        btnConversorApp.setOnClickListener { navigateToConversorApp() }
     }
 
     private fun navigateToPruebaApp() {
         val intent = Intent(this,PruebaActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToConversorApp() {
+        val intent = Intent(this,ConversorActivity::class.java)
         startActivity(intent)
     }
 

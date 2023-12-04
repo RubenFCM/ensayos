@@ -1,12 +1,10 @@
-package com.example.pruebasdeaprendido.PruebasApp
+package com.example.AppRuben.CalculatorApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.example.pruebasdeaprendido.R
+import com.example.AppRuben.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.text.DecimalFormat
 
@@ -37,23 +35,23 @@ class PruebaActivity : AppCompatActivity() {
     }
     private fun initListener(){
         btnSum.setOnClickListener {
-            val num1:Double = tvNumUno.text.toString().toDouble()
-            val num2:Double = tvNumDos.text.toString().toDouble()
+            val num1:Double = tvNumUno.text.toString().toDoubleOrNull() ?: 0.0
+            val num2:Double = tvNumDos.text.toString().toDoubleOrNull() ?: 0.0
             tvResult.text= (num1+num2).toString()
         }
         btnRest.setOnClickListener {
-            val num1:Double = tvNumUno.text.toString().toDouble()
-            val num2:Double = tvNumDos.text.toString().toDouble()
+            val num1:Double = tvNumUno.text.toString().toDoubleOrNull() ?: 0.0
+            val num2:Double = tvNumDos.text.toString().toDoubleOrNull() ?: 0.0
             tvResult.text= (num1-num2).toString()
         }
         btnMult.setOnClickListener {
-            val num1:Double = tvNumUno.text.toString().toDouble()
-            val num2:Double = tvNumDos.text.toString().toDouble()
+            val num1:Double = tvNumUno.text.toString().toDoubleOrNull() ?: 0.0
+            val num2:Double = tvNumDos.text.toString().toDoubleOrNull() ?: 0.0
             tvResult.text= (num1*num2).toString()
         }
         btnDiv.setOnClickListener {
-            val num1:Double = tvNumUno.text.toString().toDouble()
-            val num2:Double = tvNumDos.text.toString().toDouble()
+            val num1:Double = tvNumUno.text.toString().toDoubleOrNull() ?: 0.0
+            val num2:Double = tvNumDos.text.toString().toDoubleOrNull() ?: 0.0
             val df = DecimalFormat("#.##")
             tvResult.text= df.format(num1/num2)
         }

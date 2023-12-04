@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PruebasApp.PruebaActivity"
+    tools:context=".CalculatorApp.PruebaActivity"
     android:background="#1B4049">
     <androidx.cardview.widget.CardView
         android:id="@+id/cvSumar"
@@ -42,6 +42,7 @@
             <EditText
                 android:inputType="numberDecimal|number"
                 android:id="@+id/numUno"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -57,6 +58,7 @@
             <EditText
                 android:inputType="numberDecimal|number"
                 android:id="@+id/numDos"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -86,6 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_sum"
+                android:backgroundTint="#00BCD4"
                 app:maxImageSize="30dp"/>
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnRest"
@@ -93,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_men"
+                android:backgroundTint="#00BCD4"
                 app:maxImageSize="30dp"/>
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnMult"
@@ -100,6 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_cross2"
+                android:backgroundTint="#00BCD4"
                 app:maxImageSize="35dp"
                 />
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -107,6 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
+                android:backgroundTint="#00BCD4"
                 android:src="@drawable/ic_divide2"
                 app:maxImageSize="35dp"/>
 

@@ -1,13 +1,15 @@
-package com.example.pruebasdeaprendido
+package com.example.AppRuben
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.pruebasdeaprendido.Conversor.ConversorActivity
-import com.example.pruebasdeaprendido.PruebasApp.PruebaActivity
+import com.example.AppRuben.Conversor.ConversorActivity
+import com.example.AppRuben.CalculatorApp.PruebaActivity
 
 class MainActivity : AppCompatActivity() {
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,4 +1,4 @@
-package com.example.pruebasdeaprendido
+package com.example.AppRuben
 
 import org.junit.Test
 
